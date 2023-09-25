@@ -1,6 +1,6 @@
 # artemliubymovLS
 
-Variant:1
+Variant:9
 IDE: pycharm
 Language: Python
 Database: sql server management studio
