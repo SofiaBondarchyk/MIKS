@@ -4,6 +4,7 @@ import turtle
 
 class Rectangle(Shape):
     def __init__(self, x, y, width, height):
+         # Constructor for Rectangle class.
         self.x = x
         self.y = y
         self.width = width

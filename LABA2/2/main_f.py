@@ -1,9 +1,11 @@
 import tkinter as tk
-from player import Goalkeeper, Defender, Midfielder, Forward
+from goalkeeper import Goalkeeper
+from midfielder import Midfielder
+from defender import Defender
+from forward import Forward
 from football_team import TeamFormation, FootballTeam
 
-
-# Функція для виведення інформації про команду у спливаючому вікні
+# Function to display information about a team in a pop-up window
 def show_team_info(team):
     team_info = f"{team.name} ({team.formation.formation}):\n"
     for player in team.players:
@@ -14,7 +16,7 @@ def show_team_info(team):
     label = tk.Label(info_window, text=team_info)
     label.pack()
 
-# Приклад створення гравців і команд на основі прототипів:
+# Example of creating players and teams based on prototypes:
 def main():
     goalkeeper_prototype = Goalkeeper("Goalkeeper")
     defender_prototype = Defender("Defender")
@@ -47,7 +49,7 @@ def main():
     team_b.add_player(forward_prototype.clone())
     team_b.add_player(forward_prototype.clone())
 
-    # Виведення інформації про команди у спливаючих вікнах
+    # Display information about teams in pop-up windows
     show_team_info(team_a)
     show_team_info(team_b)
 
