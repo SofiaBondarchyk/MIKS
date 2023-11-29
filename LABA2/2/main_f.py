@@ -1,7 +1,7 @@
-# main.py
 import tkinter as tk
 from player import Goalkeeper, Defender, Midfielder, Forward
 from football_team import TeamFormation, FootballTeam
+
 
 # Функція для виведення інформації про команду у спливаючому вікні
 def show_team_info(team):

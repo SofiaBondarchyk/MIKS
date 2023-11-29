@@ -1,11 +1,10 @@
-# main.py
 import turtle
 import random
 from line import Line
 from rectangle import Rectangle
 from circle import Circle
 
-# Фабричный метод для случайной генерации фигур
+
 def create_random_shape():
     shape_types = [Line, Rectangle, Circle]
     random_shape_type = random.choice(shape_types)
@@ -19,14 +18,11 @@ def create_random_shape():
         x, y, radius = random.randint(-200, 200), random.randint(-200, 200), random.randint(10, 100)
         return Circle(x, y, radius)
 
-# Инициализируем графическое окно
 turtle.speed(1)
 
-# Создаем и рисуем случайные фигуры
 for _ in range(random.randint(1, 10)):
     shape = create_random_shape()
     shape.draw()
-
-# Завершаем рисование при клике на окно
+    
 turtle.exitonclick()
 

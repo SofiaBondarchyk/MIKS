@@ -1,5 +1,3 @@
-# football_team.py
-
 class TeamFormation:
     def __init__(self, formation):
         self.formation = formation

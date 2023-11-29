@@ -1,6 +1,6 @@
-# line.py
 from shape import Shape, random_color
 import turtle
+
 
 class Line(Shape):
     def __init__(self, x1, y1, x2, y2):

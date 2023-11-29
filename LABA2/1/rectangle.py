@@ -1,6 +1,6 @@
-# rectangle.py
 from shape import Shape, random_color
 import turtle
+
 
 class Rectangle(Shape):
     def __init__(self, x, y, width, height):
