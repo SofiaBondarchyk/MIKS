@@ -3,6 +3,7 @@ from goalkeeper import Goalkeeper
 from midfielder import Midfielder
 from defender import Defender
 from forward import Forward
+from player import Player
 from football_team import TeamFormation, FootballTeam
 
 # Function to display information about a team in a pop-up window
