@@ -1,0 +1,77 @@
+/* Загальні стилі для всіх сторінок */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.product-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.product-info {
+    max-width: 400px;
+}
+
+.product-description {
+    font-size: 16px;
+    color: #333;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #e44d26;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.similar-products-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-top: 20px;
+    padding: 10px 0; /* Збільшено відступи */
+}
+
+.similar-product {
+    display: inline-block; /* Для правильного відображення у ленті */
+    margin-right: 10px;
+    width: 100px; /* Однакова ширина для всіх подібних товарів */
+    height: 100px; /* Однакова висота для всіх подібних товарів */
+    text-align: center; /* Вирівнювання тексту по центру */
+    cursor: pointer; /* Зміна курсору при наведенні для вказівника, що можна клікнути */
+}
+
+.similar-product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
