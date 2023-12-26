@@ -1,7 +1,9 @@
 from option_category import OptionCategory
 
 
+# Define a class representing a CarConfigurator.
 class CarConfigurator:
+    # Constructor method to initialize the CarConfigurator instance.
     def __init__(self):
         self.categories = []
 

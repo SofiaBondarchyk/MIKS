@@ -1,6 +1,7 @@
 from car_options import CarOptions
 
 
+# Class representing an option category for a car.
 class OptionCategory:
     def __init__(self, name):
         self.name = name

@@ -4,44 +4,44 @@ from option_category import OptionCategory
 from car_configurator import CarConfigurator
 
 
-# Створюємо категорії опцій
+# Create option categories.
 interior_category = OptionCategory("Interior")
 exterior_category = OptionCategory("Exterior")
 safety_category = OptionCategory("Safety")
 
-# Створюємо декілька опцій для кожної категорії
+# Create several options for each category.
 leather_seats = CarOptions("Leather Seats", 1500)
 sunroof = CarOptions("Sunroof", 1200)
 backup_camera = CarOptions("Backup Camera", 800)
 blind_spot_monitoring = CarOptions("Blind Spot Monitoring", 1000)
 
-# Додаємо опції до категорій
+# Add options to categories.
 interior_category.add_option(leather_seats)
 exterior_category.add_option(sunroof)
 safety_category.add_option(backup_camera)
 safety_category.add_option(blind_spot_monitoring)
 
-# Створюємо конфігуратор та додаємо категорії до нього
+# Create a configurator and add categories to it.
 configurator = CarConfigurator()
 configurator.add_category(interior_category)
 configurator.add_category(exterior_category)
 configurator.add_category(safety_category)
 
-# Створюємо команди для додавання опцій
+# Create commands for adding options.
 add_leather_seats = AddOptionCommand(leather_seats, interior_category)
 add_sunroof = AddOptionCommand(sunroof, exterior_category)
 add_blind_spot_monitoring = AddOptionCommand(blind_spot_monitoring, safety_category)
 
-# Викликаємо команди для додавання опцій
+# Execute commands to add options.
 add_leather_seats.execute()
 add_sunroof.execute()
 add_blind_spot_monitoring.execute()
 
-# Виводимо стан конфігуратора
+# Display the state of the configurator.
 configurator.configure_car()
 
-# Викликаємо команду для скидання категорії "Safety"
+# Undo the command for the "Safety" category.
 add_blind_spot_monitoring.undo()
 
-# Виводимо оновлений стан конфігуратора
+# Display the updated state of the configurator.
 configurator.configure_car()

@@ -5,8 +5,9 @@ from long_jumping_state import LongJumpingState
 from standing_state import StandingState
 from main import update_player_state_text
 
-
+# Class representing a player with different states.
 class Player:
+    # Constructor method to initialize a Player instance with default standing state.
     def __init__(self):
         self.standing_state = StandingState()
         self.running_state = RunningState()
@@ -21,19 +22,19 @@ class Player:
 
     def run(self):
         self.state = self.running_state
-        update_player_state_text("Початок бігу")
+        update_player_state_text("Start running")
 
     def end_run(self):
         self.state = self.standing_state
-        update_player_state_text("Зупинка бігу")
+        update_player_state_text("Stop running")
 
     def long_jump(self):
         self.state = self.long_jumping_state
-        update_player_state_text("Початок довгого стрибка")
+        update_player_state_text("Start long jump")
 
     def end_long_jump(self):
         self.state = self.standing_state
-        update_player_state_text("Зупинка довгого стрибка")
+        update_player_state_text("Stop long jump")
 
     def get_state_text(self):
         return str(self.state)
