@@ -1,10 +1,9 @@
-from utils import update_player_state_text
+from SquattingState import SquattingState
+from q import update_player_state_text
 
 
-# Class representing the state of a player while standing.
 class StandingState:
     def handle_squat(self):
-        from squatting_state import SquattingState
         update_player_state_text("Squatting")
         return SquattingState()
 
@@ -15,4 +14,4 @@ class StandingState:
         update_player_state_text("Normal run")
 
     def __str__(self):
-        return "Standing"
+        return "Standing"  # Textual representation of the state

@@ -1,7 +1,6 @@
 import pygame
 import sys
-from utils import update_player_state_text
-from player import Player
+from Player import Player
 
 # Define colors
 WHITE = (255, 255, 255)
@@ -11,16 +10,16 @@ RED = (255, 0, 0)
 # Initialize Pygame
 pygame.init()
 
-# Create the screen
+# Create screen
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption('Joystick Emulation')
 
-# Create the player
+# Create player
 player = Player()
 
-# Create a font
+# Create font
 font = pygame.font.Font(None, 36)
 
 # Initial player state text
@@ -32,11 +31,11 @@ def draw_text(text, x, y):
     text_rect = text_surface.get_rect(center=(x, y))
     screen.blit(text_surface, text_rect)
 
-# Function to display the player's state
+# Function to display player state
 def draw_player_state():
     draw_text(player_state_text, SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2)
 
-# Function to update the text display of the player's state
+# Function to update the text display of player state
 def update_player_state_text(new_text=""):
     global player_state_text
     player_state_text = new_text
@@ -57,7 +56,7 @@ while True:
             elif long_jump_button_rect.collidepoint(event.pos):
                 player.long_jump()
 
-    # Fill the screen with a black color
+    # Fill the screen with black color
     screen.fill(BLACK)
 
     # Create and display buttons
@@ -71,7 +70,7 @@ while True:
     draw_text('Squat', squat_button_rect.centerx, squat_button_rect.centery)
     draw_text('Long Jump', long_jump_button_rect.centerx, long_jump_button_rect.centery)
 
-    # Display the player's state
+    # Display player state
     draw_player_state()
 
     pygame.display.flip()
