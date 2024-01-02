@@ -2,7 +2,7 @@
 ![AdapterFitness](https://github.com/SofiaBondarchyk/MIKS/blob/LABA3/LABA3/1/Sport.png)
 
 ## BridgeStore
-![Prototype](https://github.com/SofiaBondarchyk/MIKS/blob/LABA2/LABA2/2/2.png)
+![BridgeStore](https://github.com/SofiaBondarchyk/MIKS/blob/LABA3/LABA3/2/shop.png)
 
 # MICS
 | № |   IDE  | Language |      Database     |
