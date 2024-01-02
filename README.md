@@ -1,6 +1,5 @@
-# artemliubymovLS
+# MICS
 
-Variant:9
-IDE: pycharm
-Language: Python
-Database: sql server management studio
+| № |   IDE  | Language |      Database     |
+|---|--------|----------|-------------------|
+| 9 | PyCharm|  Python  | Microsoft SSMS 19 |
