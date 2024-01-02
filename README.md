@@ -1,5 +1,5 @@
 ## AdapterFitness
-![FactoryMethod](https://github.com/SofiaBondarchyk/MIKS/blob/LABA2/LABA2/1/1.png)
+![AdapterFitness](https://github.com/SofiaBondarchyk/MIKS/blob/LABA2/LABA2/1/1.png)
 
 ## BridgeStore
 ![Prototype](https://github.com/SofiaBondarchyk/MIKS/blob/LABA2/LABA2/2/2.png)
