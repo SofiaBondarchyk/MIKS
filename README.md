@@ -4,7 +4,7 @@
 ## Prototype
 ![Prototype](https://github.com/SofiaBondarchyk/MIKS/blob/LABA2/LABA2/2/2.png)
 
-#MICS
+# MICS
 | № |   IDE  | Language |      Database     |
 |---|--------|----------|-------------------|
 | 9 | Pycharm |  Python | Microsoft SSMS 19 |
