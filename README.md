@@ -1,5 +1,5 @@
 ## Adapter_Fitness
-![Adapter_Fitness] (https://github.com/SofiaBondarchyk/MIKS/blob/LABA2/LABA2/1/Sport.png)
+![Sport] (https://github.com/SofiaBondarchyk/MIKS/blob/LABA2/LABA2/1/Sport.png)
 
 ## Bridge_Store
 ![Bridge_Store] (https://github.com/SofiaBondarchyk/MIKS/blob/LABA2/LABA2/2/shop.png)
