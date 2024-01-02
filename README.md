@@ -1,11 +1,10 @@
-## Adapter_Fitness
-![Sport] (https://github.com/SofiaBondarchyk/MIKS/blob/LABA2/LABA2/1/Sport.png)
+## AdapterFitness
+![FactoryMethod](https://github.com/SofiaBondarchyk/MIKS/blob/LABA2/LABA2/1/1.png)
 
-## Bridge_Store
-![Bridge_Store] (https://github.com/SofiaBondarchyk/MIKS/blob/LABA2/LABA2/2/shop.png)
+## BridgeStore
+![Prototype](https://github.com/SofiaBondarchyk/MIKS/blob/LABA2/LABA2/2/2.png)
 
 # MICS
-
 | № |   IDE  | Language |      Database     |
 |---|--------|----------|-------------------|
-| 9 | PyCharm|  Python  | Microsoft SSMS 19 |
+| 9 | Pycharm |  Python | Microsoft SSMS 19 |
